@@ -59,6 +59,12 @@ function hideRecap() {
   }
 }
 
+//these variables are going to be used for the timeout functions to clear the timeouts
+var w;
+var x;
+var y;
+var z;
+
 //this function is supposed to be called when the page loads, it hides the questions and leaves the start block displayed
 $(document).ready(function start() {
   hideQuestion1();
@@ -72,7 +78,7 @@ $(document).ready(function start() {
     hideStart(); //hide start box
     hideQuestion1(); //display question 1
     startTimer();
-    setTimeout(OuttaTime1, 30000);
+    w = setTimeout(OuttaTime1, 30000);
   });
 
   $("#Correct1").on("click", function Q1Correct() {
@@ -80,7 +86,7 @@ $(document).ready(function start() {
     correct++;
     resetTimer();
     Q2func();
-    clearTimeout();
+    clearTimeout(w);
   });
 
   $("#inCorrect10").on("click", function Q1inCorrect() {
@@ -88,7 +94,7 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     Q2func();
-    clearTimeout();
+    clearTimeout(w);
   });
 
   $("#inCorrect11").on("click", function Q1inCorrect() {
@@ -96,7 +102,7 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     Q2func();
-    clearTimeout();
+    clearTimeout(w);
   });
 
   $("#inCorrect12").on("click", function Q1inCorrect() {
@@ -104,7 +110,7 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     Q2func();
-    clearTimeout();
+    clearTimeout(w);
   });
   
 
@@ -112,7 +118,7 @@ $(document).ready(function start() {
     hideQuestion1(); //hide question 1
     hideQuestion2(); //display question 2
     startTimer();
-    setTimeout(OuttaTime2, 30000);
+    x = setTimeout(OuttaTime2, 30000);
   };
 
   $("#Correct2").on("click", function Q2Correct() {
@@ -120,7 +126,7 @@ $(document).ready(function start() {
     correct++;
     resetTimer();
     Q3func();
-    clearTimeout();
+    clearTimeout(x);
   });
 
   $("#inCorrect20").on("click", function Q2inCorrect() {
@@ -128,7 +134,7 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     Q3func();
-    clearTimeout();
+    clearTimeout(x);
   });
 
   $("#inCorrect21").on("click", function Q1inCorrect() {
@@ -136,7 +142,7 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     Q3func();
-    clearTimeout();
+    clearTimeout(x);
   });
 
   $("#inCorrect22").on("click", function Q1inCorrect() {
@@ -144,14 +150,14 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     Q3func();
-    clearTimeout();
+    clearTimeout(x);
   });
 
   function Q3func() {
     hideQuestion2(); //hide question 2
     hideQuestion3(); //display question 3
     startTimer();
-    setTimeout(OuttaTime3, 30000);
+    y = setTimeout(OuttaTime3, 30000);
   };
 
   $("#Correct3").on("click", function Q3Correct() {
@@ -159,7 +165,7 @@ $(document).ready(function start() {
     correct++;
     resetTimer();
     Q4func();
-    clearTimeout();
+    clearTimeout(y);
   });
 
   $("#inCorrect30").on("click", function Q3inCorrect() {
@@ -167,7 +173,7 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     Q4func();
-    clearTimeout();
+    clearTimeout(y);
   });
 
   $("#inCorrect31").on("click", function Q1inCorrect() {
@@ -175,7 +181,7 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     Q4func();
-    clearTimeout();
+    clearTimeout(y);
   });
 
   $("#inCorrect32").on("click", function Q1inCorrect() {
@@ -183,14 +189,14 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     Q4func();
-    clearTimeout();
+    clearTimeout(y);
   });
 
   function Q4func() {
     hideQuestion3(); //hide question 3
     hideQuestion4(); //display question 4
     startTimer();
-    setTimeout(OuttaTime4, 30000);
+    z = setTimeout(OuttaTime4, 30000);
   };
 
   $("#Correct4").on("click", function Q4Correct() {
@@ -198,7 +204,7 @@ $(document).ready(function start() {
     correct++;
     resetTimer();
     recapFunc();
-    clearTimeout();
+    clearTimeout(z);
   });
 
   $("#inCorrect40").on("click", function Q4inCorrect() {
@@ -206,7 +212,7 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     recapFunc();
-    clearTimeout();
+    clearTimeout(z);
   });
 
   $("#inCorrect41").on("click", function Q1inCorrect() {
@@ -214,7 +220,7 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     recapFunc();
-    clearTimeout();
+    clearTimeout(z);
   });
 
   $("#inCorrect42").on("click", function Q1inCorrect() {
@@ -222,7 +228,7 @@ $(document).ready(function start() {
     incorrect++;
     resetTimer();
     recapFunc();
-    clearTimeout();
+    clearTimeout(z);
   });
 
   function recapFunc() {
@@ -240,7 +246,6 @@ $(document).ready(function start() {
     outtaTime++;
     resetTimer();
     Q2func();
-    clearTimeout();
   }
   
   function OuttaTime2() {
@@ -248,7 +253,6 @@ $(document).ready(function start() {
     outtaTime++;
     resetTimer();
     Q3func();
-    clearTimeout();
   }
   
   function OuttaTime3() {
@@ -256,7 +260,6 @@ $(document).ready(function start() {
     outtaTime++;
     resetTimer();
     Q4func();
-    clearTimeout();
   }
   
   function OuttaTime4() {
@@ -264,7 +267,6 @@ $(document).ready(function start() {
     outtaTime++;
     resetTimer();
     recapFunc();
-    clearTimeout();
   }
 
   //function used to start timer for each question
