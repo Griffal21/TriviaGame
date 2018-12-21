@@ -12,11 +12,67 @@
 </head>
 <body>
 
-<div class = "jumotron">
-  <div id = "question"></div>
-  <button type="button" class="btn btn-primary btn-lg" id="Start">Start</button>
-  <div id="display">00:00</div>
+  <div class="jumbotron" id = "start">
+    <h1 class="display-4"><div id="Question"></div></h1>
+    <p class="lead">This is a quiz on math.  Each question has a time limit of 30 seconds!</p>
+    <hr class="my-4">
+    <button type="button" class="btn btn-primary btn-lg" id="Start">Start</button>
+  </div>
+
+
+<div class="jumbotron" id = "question1">
+  <h1 class="display-4"><div id="Question"></div></h1>
+  <p class="lead">This useful formula for factoring polynomials was derived from "Completing the Square."</p>
+  <hr class="my-4">
+  <div class="displayTime">00:00</div>
+  <button type="button" class="btn btn-primary btn-lg" id="Correct1">The Quadratic Forula</button>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect10">FOIL</button>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect11">Pythagorean Theorem</button>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect12">Euler's Formula</button>
 </div>
+
+<div class="jumbotron" id = "question2">
+  <h1 class="display-4"><div id="Question"></div></h1>
+  <p class="lead">Which of the following is not one of Newton's Laws.</p>
+  <hr class="my-4">
+  <div class="displayTime">00:00</div>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect20">An object at rest remains at rest</button>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect21">Force = Mass x Acceleration</button>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect22">For every action there is an equal and opposite reaction.</button>
+  <button type="button" class="btn btn-primary btn-lg" id="Correct2">Area = 1/2 x Base x Height</button>
+</div>
+
+<div class="jumbotron" id = "question3">
+  <h1 class="display-4"><div id="Question"></div></h1>
+  <p class="lead">Which of the following discovered Caclulus after Newton did ten years previously?  Without Newton's help.</p>
+  <hr class="my-4">
+  <div class="displayTime">00:00</div>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect30">Gauss</button>
+  <button type="button" class="btn btn-primary btn-lg" id="Correct3">Leibniz </button>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect31">Euler</button>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect32">Galois</button>
+</div>
+
+<div class="jumbotron" id = "question4">
+  <h1 class="display-4"><div id="Question"></div></h1>
+  <p class="lead">Thomas Edison and Nikola Tesla famously fought over which of the following?</p>
+  <hr class="my-4">
+  <div class="displayTime">00:00</div>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect40">Who really invented the lightbulb</button>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect41">Who opened the patent to the tesla coil</button>
+  <button type="button" class="btn btn-primary btn-lg" id="Correct4">If either AC or DC power should be used</button>
+  <button type="button" class="btn btn-primary btn-lg" id="inCorrect42">If cars should be powered by gasoline or electricity</button>
+</div>
+
+<div class="jumbotron" id = "recap">
+  <h1 class="display-4"><div id="Question"></div></h1>
+  <p class="lead">Let's see how you did!</p>
+  <hr class="my-4">
+  <div id = "recapCorr"></div>
+  <div id = "recapinCorr"></div>
+  <div id = "outta"></div>
+</div>
+
 
 <!-- Javascript/jQuery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
