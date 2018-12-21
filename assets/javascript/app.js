@@ -82,7 +82,7 @@ $(document).ready(function start() {
   });
 
   $("#Correct1").on("click", function Q1Correct() {
-    alert("Correct!")
+    alert("Correct!  Very good, the Quadratic Formula is based on Completing the Square.")
     correct++;
     resetTimer();
     Q2func();
@@ -90,7 +90,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect10").on("click", function Q1inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  FOIL is used to multiply bonomials, and isn't based on Competing the Square.")
     incorrect++;
     resetTimer();
     Q2func();
@@ -98,7 +98,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect11").on("click", function Q1inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  While Pythagoras is thought to have come up with both formulas the Pythagorean Theorem is not based on Competing the Square.")
     incorrect++;
     resetTimer();
     Q2func();
@@ -106,7 +106,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect12").on("click", function Q1inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  Euler's formula is not based on Completing the Square.")
     incorrect++;
     resetTimer();
     Q2func();
@@ -122,7 +122,7 @@ $(document).ready(function start() {
   };
 
   $("#Correct2").on("click", function Q2Correct() {
-    alert("Correct!")
+    alert("Correct!  This is the formula for finding the area of a triangle")
     correct++;
     resetTimer();
     Q3func();
@@ -130,7 +130,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect20").on("click", function Q2inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  This is Newton's First Law")
     incorrect++;
     resetTimer();
     Q3func();
@@ -138,7 +138,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect21").on("click", function Q1inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  This is Newton's Second Law")
     incorrect++;
     resetTimer();
     Q3func();
@@ -146,7 +146,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect22").on("click", function Q1inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  This is Newton's Third Law")
     incorrect++;
     resetTimer();
     Q3func();
@@ -161,7 +161,7 @@ $(document).ready(function start() {
   };
 
   $("#Correct3").on("click", function Q3Correct() {
-    alert("Correct!")
+    alert("Correct!  Leibniz also discovered Calclulus 10 years after Newton did (Newton didn't tell anyone)")
     correct++;
     resetTimer();
     Q4func();
@@ -169,7 +169,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect30").on("click", function Q3inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  Gauss contributed to many part of Calculus but didn't discover it")
     incorrect++;
     resetTimer();
     Q4func();
@@ -177,7 +177,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect31").on("click", function Q1inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  Euler contributed to many part of Calculus but didn't discover it")
     incorrect++;
     resetTimer();
     Q4func();
@@ -185,7 +185,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect32").on("click", function Q1inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  Galois contributed to many part of Calculus but didn't discover it")
     incorrect++;
     resetTimer();
     Q4func();
@@ -200,7 +200,7 @@ $(document).ready(function start() {
   };
 
   $("#Correct4").on("click", function Q4Correct() {
-    alert("Correct!")
+    alert("Correct!  Tesla and Edison famously fought over AC and DC, Edison going so far as to electrocute an elephant")
     correct++;
     resetTimer();
     recapFunc();
@@ -208,7 +208,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect40").on("click", function Q4inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  Who invented the lightbulb is disputed, but Tesla never claimed to have invent the lightbulb.")
     incorrect++;
     resetTimer();
     recapFunc();
@@ -216,7 +216,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect41").on("click", function Q1inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  Edison never claimed to own the patent for the Tesla Coil.")
     incorrect++;
     resetTimer();
     recapFunc();
@@ -224,7 +224,7 @@ $(document).ready(function start() {
   });
 
   $("#inCorrect42").on("click", function Q1inCorrect() {
-    alert("Incorrect!")
+    alert("Incorrect!  Both men wanted cars to be powered by electricity, but for very different reasons.")
     incorrect++;
     resetTimer();
     recapFunc();

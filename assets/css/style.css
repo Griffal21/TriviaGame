@@ -1,0 +1,36 @@
+/* Everyone's favorite typefaces! */
+
+.card{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.jumbotron{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-bottom: 0;
+}
+
+.card-img-top{
+  height: 250px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.card{
+ width: 10%;
+}
+
+#bottom{
+  padding: 0;
+}
+
+.container{
+  margin: 0;
+}
+
+.btn{
+  font-family: "papyrus", "Comic Sans MS"
+}
+
+.displayTime{
+  font-size: 40px;
+}
